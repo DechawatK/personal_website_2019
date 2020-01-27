@@ -1,0 +1,64 @@
+$primary: #e59b36;
+
+.about__container {
+    background-color: #333333;
+    font-family: "Signika Negative";
+}
+
+.about__container-inner {
+    padding: 300px 3vw 100px 3vw;
+}
+
+.about__headline {
+    color: white;
+    padding-left: 15px;
+    position: relative;
+    margin-bottom: 40px;
+
+    &::before {
+        background-color: $primary;
+        bottom: 10px;
+        content: '';
+        left: 0;
+        height: 10px;
+        position: absolute;
+        width: 4px
+    }
+}
+
+.about__name, .about__solutions {
+    color: white;
+}
+
+.about__solutions-row {
+    margin: 50px 0px;
+}
+
+.about__solutions-col {
+}
+
+.about__solutions {
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 30px;
+
+    &::before {
+        background-color: $primary;
+        bottom: 9px;
+        content: '';
+        left: 0;
+        height: 10px;
+        position: absolute;
+        width: 4px
+    }
+}
+
+.about__career {
+    color: $primary;
+    margin: 10px 0 30px 0;
+}
+
+.about__text {
+    color: #d6d6d6;
+    font-size: 17px;
+}

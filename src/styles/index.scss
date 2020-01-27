@@ -1,0 +1,197 @@
+$primary: #e59b36;
+
+body {
+  -webkit-font-smoothing: antialiased !important;
+  text-rendering: optimizeLegibility !important;
+}
+
+button {
+
+  &:active {
+    border-style: outset;
+    border: none;
+    outline: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+}
+
+.wrapper {
+  max-width: 1250px;
+}
+
+.ui-index__container {
+  background-image: url(../assets/images/stage_bg_3.jpg);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ui-stage__container {
+  font-family: "Signika Negative";
+  width: 100vw;
+  height: 100vh;
+  border: #e59b36 6px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ui-stage__image {
+  width: calc(80px + 22vw);
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.ui-stage__presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ui-stage__name {
+  color: white;
+  font-size: calc(28px + 1vw);
+  font-weight: 600;
+}
+
+.ui-stage__greet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $primary;
+  width: 130px;
+  height: 30px;
+  position: relative;
+  margin-bottom: 30px;
+
+  &::after {
+    content: "";
+    background-color: $primary;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 15px;
+    left: 60px;
+    transform: rotate(45deg);
+  }
+}
+
+.ui-stage__greet span {
+  color: black;
+  font-weight: 600;
+  position: relative;
+  z-index: 2;
+}
+
+.ui-stage__occupation {
+  color: white;
+  font-size: calc(18px + 0.2vw);
+  font-weight: 600;
+}
+
+.ui-stage__quote {
+  text-align: center;
+  font-size: 17px;
+  color: rgb(214, 214, 214);
+  width: calc(500px + 2vw);
+}
+
+.ui-stage__button {
+  margin-top: 40px;
+  font-weight: 600;
+  background-color: transparent;
+  color: $primary;
+  border: 1px $primary solid;
+  padding: 7px 20px 5px 20px;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    background-color: $primary;
+    color: black;
+  }
+}
+
+.ui-stage__button-link:hover {
+  text-decoration: none;
+}
+
+
+.ui-stage__follow {
+  color: rgb(231, 231, 231);
+  font-weight: 600;
+  width: 100%;
+  position: absolute;
+  bottom: 5vh;
+}
+
+.ui-stage__social__icons span {
+  padding: 5px 8px;
+  border: 1px rgb(231, 231, 231) solid;
+  border-radius: 2px;
+  margin-right: 15px;
+}
+
+.ui-stage__social__icons a {
+  color: white;
+  text-decoration: none;
+}
+
+.ui-stage__follow-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding-right: 3vw;
+}
+
+@media only screen and (max-width: 768px) {
+  .ui-index__container {
+    background-size: auto 100%;
+  }
+
+  .ui-stage__container {
+    height: 100%;
+  }
+
+  .ui-stage__presentation {
+    padding: 20px;
+    align-items: flex-start;
+    margin-top: 400px;
+  }
+
+  .ui-stage__quote {
+    width: 90%;
+    text-align: left;
+  }
+
+  .ui-stage__image {
+    width: 250px;
+    height: auto;
+    position: absolute;
+    top: 80px;
+  }
+
+  .ui-stage__button {
+    margin-top: 20px;
+  }
+
+  .ui-stage__follow {
+    position: relative;
+    bottom: 0px;
+    padding: 40px 20px;
+  }
+
+  .ui-stage__follow-inner {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}

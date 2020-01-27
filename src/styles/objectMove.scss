@@ -1,0 +1,7 @@
+.ui-object-movement {
+  transition: all 1.2s ease;
+}
+
+.ui-object-movement.move {
+  transform: translateY(-25%);
+}
